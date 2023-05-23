@@ -15,8 +15,16 @@
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
     "next": "13.4.3",
+    "openai": "^3.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.4"
+    "remark-html": "^15.0.2",
+    "remark-parse": "^10.0.2",
+    "sass": "^1.62.1",
+    "typescript": "5.0.4",
+    "unified": "^10.1.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
   }
 }

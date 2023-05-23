@@ -1,0 +1,25 @@
+:root {
+  --text-color: #fafafa;
+  --background-color: #212121;
+  --card-color: #101010;
+  --warning-color: #4a0808;
+  --disclaimer-color: #cbe221;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 1.25rem;
+  line-height: 1.4;
+}

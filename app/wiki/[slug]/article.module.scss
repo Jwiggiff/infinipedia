@@ -1,0 +1,58 @@
+.article {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 1rem;
+
+  // @for $i from 1 through 6 {
+  //   h#{$i} {
+  //     font-size: var(--fs-h#{$i});
+  //   }
+  // }
+
+  > h1 {
+    padding-bottom: 0.125em;
+    border-bottom: 1px solid var(--text-color);
+  }
+
+  pre {
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: var(--card-color);
+  }
+
+  section[class="related-articles"] {
+    text-transform: capitalize;
+    padding: 0 1rem;
+    border: 2px solid var(--text-color);
+    border-radius: 12px;
+
+    > :first-child {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    + hr {
+      display: none;
+    }
+  }
+}
+
+.tokensWarning {
+  padding: 1rem 2rem;
+  background: var(--warning-color);
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.disclaimer {
+  padding: 0.25rem 2rem;
+  background-color: var(--disclaimer-color);
+  color: var(--background-color);
+  text-align: center;
+
+  strong {
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+}
