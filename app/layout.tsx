@@ -1,4 +1,10 @@
+import { Open_Sans } from "next/font/google";
+
 import "./globals.scss";
+
+const font = Open_Sans({
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Infinipedia",
@@ -12,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }
