@@ -21,7 +21,7 @@ export default async function Article({ params }: { params: ArticleParams }) {
       <div className={styles.disclaimer}>
         <p>
           <strong>Note: </strong>
-          The content on this site was generated using OpenAI's GPT-3 Large
+          The content on this site was generated using OpenAI&apos;s GPT-3 Large
           Language Model. It may contain false information and/or inappropriate
           content.
         </p>
