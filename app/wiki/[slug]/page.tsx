@@ -9,7 +9,7 @@ type ArticleParams = {
 
 export function generateMetadata({ params }: { params: ArticleParams }) {
   return {
-    title: toTitleCase(deslugify(params.slug)),
+    title: toTitleCase(deslugify(params.slug)) + " | Infinipedia",
   };
 }
 
