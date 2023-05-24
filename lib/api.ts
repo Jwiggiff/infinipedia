@@ -53,7 +53,7 @@ async function parseResponse(res: APIResponse) {
       /(<[\w\d]+>related articles[\s\S]*<\/ul>)/gim,
       "<section class='related-articles'>$1</section>"
     ) // Wrap related articles in section
-    .replaceAll(/<a/g, '<a target="_blank"') // Links open in new tab
+    // .replaceAll(/<a/g, '<a target="_blank"') // Links open in new tab
     .replaceAll(/(?<=href=")#/g, "/wiki/") // Replace ID links with relative links
     .replaceAll(/(?<=href=")\/(?!wiki)/g, "/wiki/") // Replace root links with relative links"
     .replaceAll(/(?<=href=")(\.)+\//g, "/wiki/")

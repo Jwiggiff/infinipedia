@@ -1,5 +1,5 @@
 export function deslugify(slug: string): string {
-  return decodeURI(slug).replaceAll("_", " ");
+  return decodeURI(slug).replaceAll("_", " ").replaceAll("-", " ");
 }
 
 export function slugify(text: string): string {
