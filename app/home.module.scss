@@ -1,44 +1,4 @@
 .home {
+  padding: 0 1rem;
   text-align: center;
-}
-
-.form {
-  display: flex;
-  flex-flow: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  font-size: 1.25em;
-
-  .input {
-    background: none;
-    font: inherit;
-    color: inherit;
-    border: none;
-    padding: 0.5rem 1rem;
-    outline: 1px solid var(--card-color);
-    border-radius: 8px 0 0 8px;
-
-    &:focus-visible {
-      outline: 1px solid var(--text-color);
-    }
-  }
-
-  button {
-    background: none;
-    border: none;
-    outline: none;
-    font: inherit;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 0.5rem 2rem;
-    border-radius: 0 8px 8px 0;
-    background-color: var(--text-color);
-    color: var(--background-color);
-  }
-}
-
-.error {
-  color: red;
-  font-size: 0.8em;
-  font-style: italic;
 }
