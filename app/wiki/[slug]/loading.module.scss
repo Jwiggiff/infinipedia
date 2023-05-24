@@ -1,0 +1,18 @@
+.loading {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+
+  .infinity {
+    stroke-dasharray: 175;
+    stroke-dashoffset: 350;
+    animation: dash 2s linear infinite;
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+}

@@ -27,7 +27,6 @@ export function Search() {
       <button
         onClick={onSubmit}
         className={topic.length === 0 ? styles.disabled : ""}
-        // style={topic.length > 0 ? { opacity: 1 } : { opacity: 0.25 }}
       >
         Go
       </button>

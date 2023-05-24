@@ -1,9 +1,19 @@
 .header {
-  position: sticky;
   width: 100%;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 0;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .container {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 700px) {
+      justify-content: space-between;
+    }
+  }
 }
