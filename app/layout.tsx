@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Open_Sans } from "next/font/google";
 
 import "./globals.scss";
@@ -18,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

@@ -1,7 +1,6 @@
 import { generateArticle } from "@/lib/api";
 import { deslugify, slugify, toTitleCase } from "@/lib/utils";
 import styles from "./article.module.scss";
-import { useEffect } from "react";
 
 type ArticleParams = {
   slug: string;
