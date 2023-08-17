@@ -1,6 +1,7 @@
 import { generateArticle } from "@/lib/api";
 import { deslugify, slugify, toTitleCase } from "@/lib/utils";
 import styles from "./article.module.scss";
+import ErrorPage from "@/components/ErrorPage";
 
 type ArticleParams = {
   slug: string;
@@ -25,10 +26,14 @@ export default async function Article({ params }: { params: ArticleParams }) {
           content.
         </p>
       </div>
-      <article
-        className={styles.article}
-        dangerouslySetInnerHTML={{ __html: article }}
-      ></article>
+      {article ? (
+        <article
+          className={styles.article}
+          dangerouslySetInnerHTML={{ __html: article }}
+        ></article>
+      ) : (
+        <ErrorPage />
+      )}
       {finish_reason === "length" && (
         <div className={styles.tokensWarning}>
           <span>Max Tokens Reached :(</span>

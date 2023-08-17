@@ -32,9 +32,14 @@ export async function generateArticle(topicSlug: string) {
     }),
   })
     .then((res) => res.json())
-    .catch((err) => console.error(err));
+    .catch((err) => {
+      console.error(err);
+      return null;
+    });
 
   console.log(res);
+
+  if (!res) return [null, null];
 
   return [await parseResponse(res), res.choices[0].finish_reason];
 }
